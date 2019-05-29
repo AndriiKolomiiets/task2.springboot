@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+    text-shadow: #fff 0px 1px 0px;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.sub_button {
+    height:50px;
+    width:100px;
+}
+
+#parent{
+    display: table;
+    width: 100%;
+}
+
+#declaration_fill {
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    margin-left : 25%
+}
+
+.flex-container {
+    display: block
+}
+
+.admin_form {
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    margin-left : 25%
+}
+
+.top-section {
+    height: 100%;
+}
+
+.more {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995DA; /* Blue */
+    padding: 20px 0;
+}
+
+.menu {
+    border: 1px solid #fff; /* For debugging */
+    width: 900px;
+}
+
+#language {
+
+}
+
+.buttons {
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.choose_button {
+    position: relative;
+    background-color: #5995DA;
+    border: none;
+    font-size: 26px;
+    color: #FFFFFF;
+    padding: 50px;
+    width: 600px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.choose_button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.choose_button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
